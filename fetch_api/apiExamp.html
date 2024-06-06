@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Countries</title>
+</head>
+<body>
+  <script>
+    const url = 'https://restcountries.com/v2/all'; // countries API
+
+    fetch(url)
+      .then(response => response.json()) // accessing the API data as JSON
+      .then(data => {
+        // Log the data to the console
+        console.log(data);
+      })
+      .catch(error => {
+        // Log the error to the console
+        console.error('Error fetching data:', error);
+      }); // handling error if something wrong happens
+  </script>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Countries</title>
+</head>
+<body>
+  <script>
+    const url = 'https://restcountries.com/v2/all'; // countries API
+
+    fetch(url)
+      .then(response => response.json()) // accessing the API data as JSON
+      .then(data => {
+        // Log the data to the console
+        console.log(data);
+      })
+      .catch(error => console.error(error)); // handling error if something wrong happens
+  </script>
+</body>
+</html>
+ -->

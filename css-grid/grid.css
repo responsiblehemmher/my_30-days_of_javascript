@@ -1,0 +1,132 @@
+/* Basic Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #8a2be2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grid with different columns */
+
+#grid-container-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+}
+
+#grid-item-2 {
+    background-color: #8a2be2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grid with Explicit Rows and Columns */
+
+#grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+#grid-item-3 {
+    background-color: #8a2be2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grid with Item Spanning Multiple Columns and Rows */
+
+.grid-container-4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #8a2be2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.item1 {
+    grid-column: span 2;
+}
+
+.item4 {
+    grid-row: span 2;
+}
+
+/* Responsive Grid Layout */
+
+#grid-container-5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+#grid-item-5 {
+    background-color: #8a2be2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Simple Fractional Units */
+
+.grid-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-f {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Unequal Fractional Units */
+
+.grid-c1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-f1 {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Grid with auto-fill and minmax */
+
+.grid-c2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.grid-f2 {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
