@@ -35,7 +35,7 @@ async function getWeather(city) {
 function calculateLocalTime(timezone) {
     const utcOffsetInSeconds = timezone;
     const localDate = new Date(new Date().getTime() + utcOffsetInSeconds * 1000);
-    return localDate.toLocaleString(); // Convert to local time string format
+    return localDate.toLocaleString(); // Convert to local time string format 
 }
 
 function displayWeather({ name, temp, humidity, description, speed, localTime }) {
